@@ -200,9 +200,6 @@ contract Hurricash {
         receiver.transfer(withdrawEther - fees);
     }
 
-    /* Helper functions */
-    // TODO: Use safemath library
-
     // Creates ring hash (used for signing)
     function createRingHash(uint256 amountEther, uint256 index) internal view
         returns (bytes32)
